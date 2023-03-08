@@ -336,4 +336,3 @@ thisisaschoolfile: School data
 thisisatextfile:       ASCII text
 ubuntu@ip-172-31-63-244:/tmp/magic$
 ```
-
