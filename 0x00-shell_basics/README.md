@@ -312,7 +312,7 @@ ubuntu@ubuntu:~/$
 
 ### 19. File type: School
 
-Create a magic file `school.mgc` that can be used with the command file to detect `School` data files. `School` data files always contain the string SCHOOL at offset 0.
+Create a magic file `school.mgc` that can be used with the command file to detect `School` data files. `School` data files always contain the string `SCHOOL` at offset 0.
 
 ```sh
 ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
