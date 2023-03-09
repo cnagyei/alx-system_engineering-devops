@@ -1,5 +1,47 @@
 # 0x00. Shell, basics
 
+## Resources
+
+- [What Is “The Shell”?](http://linuxcommand.org/lc3_lts0010.php)
+- [Navigation](http://linuxcommand.org/lc3_lts0020.php)
+- [Looking Around](http://linuxcommand.org/lc3_lts0030.php)
+- [A Guided Tour](http://linuxcommand.org/lc3_lts0040.php)
+- [Manipulating Files](http://linuxcommand.org/lc3_lts0050.php)
+- [Working with Commands](http://linuxcommand.org/lc3_lts0060.php)
+- [Reading Man Pages](http://linuxcommand.org/lc3_man_pages/man1.html)
+- [Keyboard Shortcuts for Bash](https://www.howtogeek.com/181/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
+- [LTS](https://wiki.ubuntu.com/LTS)
+- [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
+
+#### man or help:
+
+- `cd`
+- `ls`
+- `pwd`
+- `less`
+- `file`
+- `ln`
+- `cp`
+- `mv`
+- `rm`
+- `mkdir`
+- `type`
+- `which`
+- `help`
+- `man`
+
+## General Requirements
+
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your scripts will be tested on Ubuntu 20.04 LTS
+- All your scripts should be exactly two lines long (`$ wc -l file` should print 2)
+- All your files should end with a new line ([why?](https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file/18789))
+- The first line of all your files should be exactly `#!/bin/bash`
+- A `README.md` file at the root of the repo, containing a description of the repository
+- A `README.md` file, at the root of the folder of this project, describing what each script is doing
+- You are not allowed to use backticks, `&&`, `||` or `;`
+- All your scripts must be executable. To make your file executable, use the `chmod` command: `chmod u+x file`. Later, we’ll learn more about how to utilize this command.
+
 ## Tasks
 
 ### 0. Where am I?
