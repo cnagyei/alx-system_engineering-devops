@@ -172,7 +172,7 @@ Write a script that displays the third line of the file `iacta`.
 
 The file `iacta` will be in the working directory
 
-	- You are not allowed to use `sed`
+- You are not allowed to use `sed`
 
 ```sh
 julien@ubuntu:/tmp/h$ cat iacta 
@@ -248,7 +248,7 @@ julien@ubuntu:/tmp/h$
 
 Write a script that duplicates the last line of the file `iacta`
 
-	- The file `iacta` will be in the working directory
+- The file `iacta` will be in the working directory
 
 ```sh
 julien@ubuntu:/tmp/h$ cat iacta 
@@ -331,8 +331,8 @@ julien@ubuntu:/tmp/h$
 
 Write a script that counts the number of directories and sub-directories in the current directory.
 
-	- The current and parent directories should not be taken into account
-	- Hidden directories should be counted
+- The current and parent directories should not be taken into account
+- Hidden directories should be counted
 
 ```sh
 julien@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
@@ -382,8 +382,8 @@ Create a script that displays the 10 newest files in the current directory.
 
 Requirements:
 
-	- One file per line
-	- Sorted from the newest to the oldest
+- One file per line
+- Sorted from the newest to the oldest
 
 ```sh
 alex@ubuntu:/tmp$ ls -l
@@ -420,9 +420,9 @@ alex@ubuntu:/tmp$
 
 Create a script that takes a list of words as input and prints only words that appear exactly once.
 
-	- Input format: one line, one word
-	- Output format: One line, one word
-	- Words should be sorted
+- Input format: one line, one word
+- Output format: One line, one word
+- Words should be sorted
 
 ```sh
 julien@ubuntu:/tmp/0x02$ cat list 
@@ -523,7 +523,7 @@ $
 
 Display all lines of the file `/etc/ssh/sshd_config` starting with a letter.
 
-	- include capital letters as well
+- include capital letters as well
 
 ```sh
 $ ./18-letteronly
@@ -569,7 +569,7 @@ julien@ubuntu:/tmp/0x02$
 
 Write a script that displays all users and their home directories, sorted by users.
 
-	- based on the `/etc/passwd` file
+- based on the `/etc/passwd` file
 
 ```sh
 julien@ubuntu:/tmp/0x02$ cat /etc/passwd
@@ -661,5 +661,3 @@ whoopsie:/nonexistent
 www-data:/var/www
 julien@ubuntu:/tmp/0x02$ 
 ```
-
-
