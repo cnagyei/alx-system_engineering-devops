@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Ensure the script is run as root
+if [ "$(id -u)" -ne 0 ]; then
+    echo "This script must be run as root" >&2
+    exit 1
+fi
+
+# Update the Nginx configuration to run as the nginx user and listen on port 8080
+NGINX_CONF="/etc/nginx/nginx.conf"
+
+# Backup the original configuration file
+cp $NGINX_CONF ${NGINX_CONF}.bak
+
+# Modify the user directive
+sed -i 's/^user .*/user nginx;/g' $NGINX_CONF
+
+# Modify the listen directive to use port 8080
+sed i 's/listen 80 default_server;/listen 8080 default_server;/g' /etc/nginx/sites-available/default
+
+# Modify the listen directive in the default configuration to listen on all active IPs and port 8080
+sed -i 's/listen \[::\]:80 default_server;/listen \[::\]:8080 default_server;/g' /etc/nginx/sites-available/default
+
+# Change ownership of web root directory to nginx user
+chown -R nginx:nginx /var/www/html
+
+# Reload Nginx to apply the changes
+systemctl reload nginx
+
+echo "Nginx is now configured to run as nginx on port 8080."
