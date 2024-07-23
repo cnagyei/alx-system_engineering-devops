@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Arg 1: $1"
+echo $2
+echo "Arg 3 is $3"
