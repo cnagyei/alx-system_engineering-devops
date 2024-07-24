@@ -1,0 +1,8 @@
+Host school
+  HostName 54.165.145.112
+  User ubuntu
+  identityFile ~/.ssh/school
+  PubkeyAuthentication yes
+  PasswordAuthentication no
+  ChallengeResponseAuthentication no
+
